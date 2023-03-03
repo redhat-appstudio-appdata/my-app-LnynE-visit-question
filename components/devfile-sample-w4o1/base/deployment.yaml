@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-w4o1
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:LnynE-devfile-sample-w4o1
+      - image: quay.io/redhat-appstudio/user-workload@sha256:0902a3a6d76aad6d32ee29bc3392dddefb5f39b572583e7be212fa974bbeaeb2
         name: my-nodejs
         ports:
         - containerPort: 3001
