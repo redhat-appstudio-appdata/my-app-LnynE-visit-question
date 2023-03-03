@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-w4o1
+  namespace: adonahue-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:0902a3a6d76aad6d32ee29bc3392dddefb5f39b572583e7be212fa974bbeaeb2
+        name: my-nodejs
+        resources: {}
+status: {}
